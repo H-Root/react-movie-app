@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollbarStyle::-webkit-scrollbar {
+  @apply bg-base-100;
+}
+
+.scrollbarStyle::-webkit-scrollbar-thumb {
+  @apply bg-base-300 rounded-b-lg;
+}
+.scrollbarStyle::-webkit-scrollbar-track {
+  @apply rounded-b-md overflow-hidden;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
