@@ -100,7 +100,7 @@ export const OMDPProvider = ({ children }) => {
     setMovieData("");
     // setLoading(true);
     if (navigator.onLine) {
-      await axios.get(`http://omdbapi.com/?apikey=${process.env.REACT_APP_OMDB_API_KEY}&i=${movieId}`).then((data) => {
+      await axios.get(`https://omdbapi.com/?apikey=${process.env.REACT_APP_OMDB_API_KEY}&i=${movieId}`).then((data) => {
         setMovieData(data.data)
         console.log(data);
         setShow(true)
